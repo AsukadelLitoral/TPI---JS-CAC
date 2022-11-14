@@ -1,0 +1,101 @@
+.navbar {
+    padding-right: 75px;
+}
+
+.bloque1{
+    background: linear-gradient(rgba(5, 7, 12, 0.60), rgba(5, 7, 12, 0.60)), url(./imagenes/hawaii.jpg);
+    text-align: right;
+    
+}
+
+.content{
+    height: 591px;
+    padding-top: 200px;
+    padding-left: 730px;
+    padding-right: 114px;
+}
+
+.titulo1 {
+    text-align: center;
+}
+
+.titulo2 {
+    text-align: center;
+}
+
+.js {
+    text-decoration: none;
+    background-color: rgb(255, 193, 0);
+    border-radius: 10%;
+    border-style: double;
+    border-color: rgb(255, 193, 0); 
+    color: black;
+}
+
+.react {
+    text-decoration: none;
+    background-color: rgb(23, 162, 184);
+    border-radius: 10%;
+    border-style: double;
+    border-color: rgb(23, 162, 184); 
+    color: white;
+}
+
+.negocios {
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 10%;
+    border-style: double;
+    border-color: gray; 
+    color: white;
+}
+
+.startups {
+    text-decoration: none;
+    background-color: rgb(220, 53, 69);
+    border-radius: 10%;
+    border-style: double;
+    border-color: rgb(220, 53, 69); 
+    color: white;
+}
+
+.bloqueL{
+    background-image: url(./imagenes/honolulu.jpg);
+    background-size: cover;
+    background-repeat: none;
+    height: 443px;
+}
+
+.bloqueR{
+    background-color: rgb(52,58, 64);
+    height: 443px;
+    
+}
+
+.cajitaformulario{
+    text-align: center;
+    padding-left: px;
+
+}
+
+.contenedorfooter{
+    background-color: rgb(30, 82, 112);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: auto;
+}
+
+.footer{
+    text-align: center;
+    display: inline;
+    
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+

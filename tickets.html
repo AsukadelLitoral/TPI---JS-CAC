@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Trabajo Práctico Integrador JS</title>
+</head>
+<body>
+
+    <!--NAV-->
+    <div class="containter">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid navbar-dark mx-5">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="./imagenes/codoacodo.png" alt="logo" width="100px"> Conf Bs As
+                  </a>
+                  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-1 mb-lg-0 ">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Conviértete en orador</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Comprar tickets</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        <br>
+    
+<!--CARDS-->   
+    <div class="container card-group row-cols-1 row-cols-md-3 g-4">
+        <div class="card border-primary">
+            <div class="card-header card text-bg-primary mb-3">
+                <h5 class="card-title text-center">Estudiante</h5>
+            </div>
+            <div class="card-body">       
+              <p class="card-text text-center">Tiene un descuento</p>
+              <h3 class="card-title text-center">80%</h3>
+              <p class="card-text text-center"><small class="text-muted">*Presentar documentación</small></p>
+            </div>
+        </div>
+         
+        <div class="card border-success">
+            <div class="card-header card text-bg-success mb-3">
+                <h5 class="card-title text-center">Trainee</h5>
+            </div>
+            <div class="card-body"> 
+              <p class="card-text text-center">Tiene un descuento</p>
+              <h3 class="card-title text-center">50%</h3>
+              <p class="card-text text-center"><small class="text-muted">*Presentar documentación</small></p>
+            </div>
+          </div>
+        
+        <div class="card border-warning">
+            <div class="card-header card text-bg-warning mb-3">
+                <h5 class="card-title text-center">Junior</h5>
+            </div>
+          <div class="card-body">
+            
+              <p class="card-text text-center">Tiene un descuento</p>
+              <h3 class="card-title text-center">15%</h3>
+              <p class="card-text text-center"><small class="text-muted">*Presentar documentación</small></p>
+            </div>
+         </div>
+    </div>
+
+<!--FORM-->
+    <form action="" class="formulario" id="formulario">
+        <div class="container">
+            <div class="row2 mt-2 mb-3">
+                <div class="titulo1 col-12">
+                    <h7>VENTA</h7>  
+                </div>
+                <div class="titulo2 col-12">
+                    <h2>VALOR DE TICKET $200</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!--Nombre-->
+                <div class="col">
+                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    <small></small>
+                </div>
+                <!--Apellido-->
+                <div class="col">
+                    <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    </div>
+                    <small></small>
+                </div><br>
+                <!--Email-->
+                <div class="col">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Correo" aria-label="Correo">
+                    <small></small>
+                </div><br>
+                <!--Cantidad-->
+                <div class="row">
+                <div class="col">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" name="cantidad" id="cantidad">
+                    <small></small>
+                </div>
+                <!--Categoría-->
+                <div class="col">
+                    <label for="inputCategoria" class="form-label">Categoría</label>
+                    <select id="categoriaSelect" class="form-select">
+                        <option value="">--seleccione una categoria--</option>
+                        <option value="0">Sin categoria</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>
+            </div><br><br>
+            <div class="alert alert-primary" role="alert" id="totalCompra">
+            Total a pagar:$
+            </div><br>
+            <!--Botones-->
+            <div class="row">
+                <div class="col d-grid gap-2">
+                    <button class="btn btn-success" id="botonBorrar" type="reset">Borrar</button>
+                </div>
+                <div class="col d-grid gap-2">
+                    <button class="btn btn-success" id="botonResumen" type="button">Resumen</button>
+                </div>
+            </div><br><br><br>        
+        </div>
+    </form>     
+
+<!--FOOTER-->
+    <footer class="container-fluid contenedorfooter">
+        <div class="row col-12">
+            <div class="footer">
+                <a href="">Preguntas Frecuentes</a>
+                <a href="">Contáctanos</a>
+                <a href="">Prensa</a>
+                <a href="">Conferencias</a>
+                <a href="">Términos y condiciones</a>
+                <a href="">Privacidad</a>
+                <a href="">Estudiantes</a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <!-- link javascript -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <!--<script src="../bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.js"></script>-->  
+    <script src="script.js"></script>
+</body>
+</html>
